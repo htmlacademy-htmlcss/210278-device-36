@@ -56,24 +56,20 @@
       </div>
     </header>
     <main>
-      <header class="page-title">
         <div class="page-title__wrapper container">
           <h1 class="page-title__heading">Моноподы для селфи</h1>
           <ul class="page-title__nav">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="#">Каталог товаров</a></li>
             <li><a class="curent-page">Моноподы для селфи</a></li>
           </ul>
         </div>
-      </header>
       <section class="main-catalog">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <div class="main-catalog-container container">
           <section class="filters">
-            <div class="filters__top">
-              <h2 class="catalog-section-title">Фильтр:</h2>
-            </div>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <h2 class="catalog-section-title">Фильтр:</h2>
+            <form class="catalog-filter" name="filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter__price-control">
                 <legend class="catalog-filter__title">Стоимость</legend>
                 <div class="catalog-filter__price-slider">
@@ -95,32 +91,32 @@
               <fieldset class="catalog-filter__color">
                 <legend class="catalog-filter__title">Цвет</legend>
                 <p class="catalog-filter__text">
-                  <input type="checkbox" id="checkbox_1" name="black" class="catalog-filter-input-checkbox" checked="">
-                  <label for="checkbox_1" class="catalog-filter-label catalog-filter-lable_checkbox">
+                  <input type="checkbox" id="checkbox-black" name="black" class="catalog-filter-input-checkbox" checked="">
+                  <label for="checkbox-black" class="catalog-filter-label catalog-filter-label_checkbox">
                     Черный
                   </label>
                 </p>
                 <p class="catalog-filter__text">
-                  <input type="checkbox" id="checkbox_2" name="white" class="catalog-filter-input-checkbox" checked="">
-                  <label for="checkbox_2" class="catalog-filter-label catalog-filter-lable_checkbox">
+                  <input type="checkbox" id="checkbox-white" name="white" class="catalog-filter-input-checkbox" checked="">
+                  <label for="checkbox-white" class="catalog-filter-label catalog-filter-label_checkbox">
                     Белый
                   </label>
                 </p>
                 <p class="catalog-filter__text">
-                  <input type="checkbox" id="checkbox_3" name="blue" class="catalog-filter-input-checkbox">
-                  <label for="checkbox_3" class="catalog-filter-label catalog-filter-lable-checkbox">
+                  <input type="checkbox" id="checkbox-blue" name="blue" class="catalog-filter-input-checkbox">
+                  <label for="checkbox-blue" class="catalog-filter-label catalog-filter-label_checkbox">
                     Синий
                   </label>
                 </p>
                 <p class="catalog-filter__text">
-                  <input type="checkbox" id="checkbox_4" name="red" class="catalog-filter-input-checkbox">
-                  <label for="checkbox_4" class="catalog-filter-label catalog-filter-lable_checkbox">
+                  <input type="checkbox" id="checkbox-red" name="red" class="catalog-filter-input-checkbox">
+                  <label for="checkbox-red" class="catalog-filter-label catalog-filter-label_checkbox">
                     Красный
                   </label>
                 </p>
                 <p class="catalog-filter__text">
-                  <input type="checkbox" id="checkbox_5" name="pink" class="catalog-filter-input-checkbox">
-                  <label for="checkbox_5" class="catalog-filter-label catalog-filter-lable_checkbox">
+                  <input type="checkbox" id="checkbox-pink" name="pink" class="catalog-filter-input-checkbox">
+                  <label for="checkbox-pink" class="catalog-filter-label catalog-filter-label_checkbox">
                     Розовый
                   </label>
                 </p>
@@ -129,13 +125,13 @@
                 <legend class="catalog-filter__title">Bluetooth</legend>
                 <p class="catalog-filter__text">
                   <input type="radio" id="bluetooth-yes" name="bluetooth" class="catalog-filter__input-radio" checked="">
-                  <label for="bluetooth-yes" class="catalog-filter-label catalog-filter__label-radio">
+                  <label for="bluetooth-yes" class="catalog-filter-label catalog-filter-label_radio">
                     Есть
                   </label>
                 </p>
                 <p class="catalog-filter__text">
                   <input type="radio" id="bluetooth-no" name="bluetooth" class="catalog-filter__input-radio">
-                  <label for="bluetooth-no" class="catalog-filter-label catalog-filter__label-radio">
+                  <label for="bluetooth-no" class="catalog-filter-label catalog-filter-label_radio">
                     Нет
                   </label>
                 </p>
