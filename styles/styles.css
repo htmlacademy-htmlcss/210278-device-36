@@ -54,8 +54,9 @@ body {
   line-height: 21px;
   text-align: center;
   letter-spacing: 3.2px;
+  color: #000000;
   text-transform: uppercase;
-  background: #FFE17F;
+  text-decoration: none;
 }
 
 /*Header*/
@@ -63,7 +64,8 @@ body {
   background-color: #FFE17F;
 }
 
-.user-menu__user, .user-menu__functions, .site-menu__sub-item, .site-menu__list {
+.user-menu__user, .user-menu__functions, .site-menu__sub-item, .site-menu__list,
+.products-catalog__item, .service__item, .company-about__list-item {
   list-style-type: none;
 }
 
@@ -123,5 +125,105 @@ body {
 
 .main-slider__table-text {
   font-size: 16px;
+  color: #444444;
+}
+
+/*Main*/
+.products-catalog__list {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.products-catalog__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.delivery__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.service {
+  background-color: #F0F0F0;
+}
+
+.service__info-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.service__info-text {
+  color: #444444;
+}
+
+.company-info__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.company-about__text {
+  color: #444444;
+}
+
+.company-about__list-item {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.company-contacts__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #444444;
+}
+
+.company-contacts__address {
+  font-style: normal;
+  color: #444444;
+}
+
+.company-contacts__tel {
+  color: #444444;
+}
+
+.subscribe__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscribe__text {
+  color: #444444;
+}
+
+.subscribe__form-field {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.button_subscribe {
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe__notice {
   color: #444444;
 }
