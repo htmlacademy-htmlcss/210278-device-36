@@ -46,14 +46,21 @@ body {
   overflow: hidden;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  background: #FFE17F;
+}
+
 /*Header*/
 .main-menu {
   background-color: #FFE17F;
-}
-
-.search-button {
-  text-decoration: none;
-  color: #000000;
 }
 
 .user-menu__user, .user-menu__functions, .site-menu__sub-item, .site-menu__list {
@@ -91,4 +98,30 @@ body {
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+}
+
+/*Slider*/
+.main-slider__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-slider__text {
+  color: #444444;
+}
+
+.button_main-slider {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-slider__table-facts {
+  font-size: 36px;
+}
+
+.main-slider__table-text {
+  font-size: 16px;
+  color: #444444;
 }
