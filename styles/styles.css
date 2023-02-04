@@ -48,7 +48,6 @@ body {
 
 .button {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -65,7 +64,8 @@ body {
 }
 
 .user-menu__user, .user-menu__functions, .site-menu__sub-item, .site-menu__list,
-.products-catalog__item, .service__item, .company-about__list-item, .footer__nav, .footer__social-icon {
+.products-catalog__item, .service__item, .company-about__list-item, .footer__nav,
+.footer__social-icon, .catalog-title__nav-item, .catalog__pagination-page {
   list-style-type: none;
 }
 
@@ -102,9 +102,13 @@ body {
   text-decoration: none;
 }
 
+.user-menu__login_logout {
+  opacity: 0.3
+}
+
 /*Slider*/
 .main-slider__title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -200,7 +204,7 @@ body {
   color: #444444;
 }
 
-.subscribe__title {
+.subscribe__title, .catalog-title__heading {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -254,4 +258,78 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+
+/*Catalog*/
+.catalog-title__nav-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-catalog, .catalog__pagination {
+  background-color: #F0F0F0;
+}
+
+.catalog-section-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter__title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.catalog-filter-label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__sort-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog__product-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.catalog__product-price {
+  line-height: 21px;
+  color: #444444;
+}
+
+.catalog__load-more {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog__pagination-button {
+  color: #444444;
+  opacity: 0.3;
+}
+
+.catalog__pagination-button_forward {
+  color: #000000;
+  opacity: 1;
+}
+
+.catalog__pagination-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #444444;
 }
