@@ -421,11 +421,47 @@ body {
 
 
 /*Catalog*/
+.catalog-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-title__nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-title__nav-item:not(:last-child) {
+  padding-right: 36px;
+}
+
 .catalog-title__nav-link {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.main-catalog-container {
+  display: flex;
+}
+
+.filters {
+  width: 320px;
+}
+
+.catalog {
+  width: 840px;
+}
+
+.catalog__products {
+  background-color: #FFFFFF;
+}
+
+.catalog__sort {
+  display: flex;
+  align-items: baseline;
 }
 
 .main-catalog, .catalog__pagination {
