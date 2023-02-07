@@ -146,41 +146,45 @@
         </div>
       </div>
     </section>
-    <main>
+    <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-      <div class="container">
+
         <section class="products-catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
-          <ul class="products-catalog__list">
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Виртуальная реальность</a></li>
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Моноподы для селфи</a></li>
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Экшн-камеры</a></li>
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Фитнес-браслеты</a></li>
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Умные часы</a></li>
-            <li class="products-catalog__item"><a href="#" class="products-catalog__link">Квадрокоптеры</a></li>
-          </ul>
+          <div class="container">
+            <ul class="products-catalog__list">
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Виртуальная реальность</a></li>
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Моноподы для селфи</a></li>
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Экшн-камеры</a></li>
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Фитнес-браслеты</a></li>
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Умные часы</a></li>
+              <li class="products-catalog__item"><a href="#" class="products-catalog__link">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </section>
         <section class="service">
           <h2 class="visually-hidden">Услуги</h2>
-          <div class="service__container">
-            <div class="service__slider">
-              <ul class="service__list">
-                <li class="service__item">Доставка</li>
-                <li class="service__item">Гарантия</li>
-                <li class="service__item">Кредит</li>
-              </ul>
-              <div class="service__info-wrapper">
-                <div class="service__info service__info_active">
-                  <h3 class="service__info-title">Доставка</h3>
-                  <p class="service__info-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </div>
-                <div class="service__info service__info_hidden">
-                  <h3 class="service__info-title">Гарантия</h3>
-                  <p class="service__info-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                </div>
-                <div class="service__info service__info_hidden">
-                  <h3 class="service__info-title">Кредит</h3>
-                  <p class="service__info-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <div class="container">
+            <div class="service__container">
+              <div class="service__slider">
+                <ul class="service__list">
+                  <li class="service__item">Доставка</li>
+                  <li class="service__item">Гарантия</li>
+                  <li class="service__item">Кредит</li>
+                </ul>
+                <div class="service__info-wrapper">
+                  <div class="service__info service__info_active">
+                    <h3 class="service__info-title">Доставка</h3>
+                    <p class="service__info-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <div class="service__info service__info_hidden">
+                    <h3 class="service__info-title">Гарантия</h3>
+                    <p class="service__info-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                  </div>
+                  <div class="service__info service__info_hidden">
+                    <h3 class="service__info-title">Кредит</h3>
+                    <p class="service__info-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,20 +222,24 @@
             </div>
           </div>
         </section>
-        <section class="subscribe">
-          <div class="container">
-            <div class="subscribe__wrapper">
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__wrapper">
+            <div class="subscribe__text-wrapper">
               <b class="subscribe__title">Подпишитесь на рассылку</b>
               <p class="subscribe__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
+            <div class="subscribe__form-wrapper">
               <form class="subscribe__form" method="post" action="#">
                 <input type="text" name="subscribe" placeholder="Ваш e-mail" class="subscribe__form-field">
                 <button class="button button_subscribe" type="submit">Подписаться</button>
               </form>
-                <p class="subscribe__notice">Это бесплатно</p>
+              <p class="subscribe__notice">Это бесплатно</p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -241,7 +249,7 @@
           </a>
           <div class="footer__info">
             <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-            <ul>
+            <ul class="footer__list">
               <li class="footer__nav"><a class="footer__nav-link" href="#">Доставка</a></li>
               <li class="footer__nav"><a class="footer__nav-link" href="#">Гарантия</a></li>
               <li class="footer__nav"><a class="footer__nav-link" href="#">Контакты</a></li>
