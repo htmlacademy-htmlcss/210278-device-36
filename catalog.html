@@ -20,17 +20,19 @@
               <a href="#" class="user-menu__search-button">Найти</a>
             </form>
             <ul class="user-menu__user">
-              <li class="user-menu__name">Коля Петухов</li>
-              <li>
-                <a class="user-menu__login user-menu__login_logout">Выйти</a>
+              <li class="user-menu__name">
+                <a href="#" class="user-menu__name-link">Коля Петухов</a>
+              </li>
+              <li class="user-menu__list">
+                <a class="user-menu__login user-menu__login_logout" href="#">Выйти</a>
               </li>
             </ul>
             <ul class="user-menu__functions">
-              <li>
-                <a class="user-menu__comparing">Сравнить</a>
+              <li class="user-menu__list">
+                <a class="user-menu__comparing" href="#">Сравнить</a>
               </li>
-              <li>
-                <a class="user-menu__card">Корзина</a>
+              <li class="user-menu__list">
+                <a class="user-menu__card" href="#">Корзина</a>
               </li>
             </ul>
           </div>
@@ -54,7 +56,7 @@
                 </ul>
               </li>
               <li class="site-menu__item"><a href="#" class="site-menu__item-link">Доставка</a></li>
-              <li class="site-menu__item"><a href="#" class="site-menu__item-link">Гарантии</a></li>
+              <li class="site-menu__item"><a href="#" class="site-menu__item-link">Гарантия</a></li>
               <li class="site-menu__item"><a href="#" class="site-menu__item-link">Контакты</a></li>
             </ul>
           </div>
@@ -148,7 +150,7 @@
             <section class="catalog container">
               <h2 class="visually-hidden">Каталог с результатами фильтра</h2>
               <div class="catalog__sort">
-                  <h2 class="catalog-section-title">Сортировка:</h2>
+                  <h2 class="catalog-section-title catalog-section-title_sort">Сортировка:</h2>
                   <div class="catalog__sort-categories">
                     <a href="#" class="catalog__sort-link">Популярные</a>
                     <a href="#" class="catalog__sort-link catalog__sort-filter-up" aria-label="По возрастанию"></a>
@@ -156,34 +158,26 @@
                   </div>
               </div>
               <div class="catalog__products">
-                <div class="catalog__product">
+                <a href="#" class="catalog__product">
                   <img src="images/catalog-products/catalog-product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <div class="catalog__product-info">
                     <h3 class="catalog__product-title">Любительская селфи-палка</h3>
                     <p class="catalog__product-price">500 ₽</p>
-                  </div>
-                </div>
-                <div class="catalog__product">
+                </a>
+                <a href="#" class="catalog__product">
                   <img src="images/catalog-products/catalog-product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <div class="catalog__product-info">
                     <h3 class="catalog__product-title">Профессиональная селфи-палка</h3>
                     <p class="catalog__product-price">1 500 ₽</p>
-                  </div>
-                </div>
-                <div class="catalog__product">
+                </a>
+                <a href="#" class="catalog__product">
                   <img src="images/catalog-products/catalog-product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <div class="catalog__product-info">
                     <h3 class="catalog__product-title">Непотопляемая селфи-палка</h3>
                     <p class="catalog__product-price">2 500 ₽</p>
-                  </div>
-                </div>
-                <div class="catalog__product">
+                </a>
+                <a href="#" class="catalog__product">
                   <img src="images/catalog-products/catalog-product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                  <div class="catalog__product-info">
                     <h3 class="catalog__product-title">Селфи-палка «Следуй за мной»</h3>
                     <p class="catalog__product-price">1 500 ₽</p>
-                  </div>
-                </div>
+                </a>
               </div>
               <a href="#" class="button catalog__load-more">Загрузить ещё</a>
               <div class="catalog__pagination">
@@ -216,11 +210,11 @@
             </ul>
             <a class="footer__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
-          <div class="footer__social-icons">
-            <ul>
-              <li class="footer__social-icon"><a href="#" aria-label="Телеграм"></a></li>
-              <li class="footer__social-icon"><a href="#" aria-label="Ютуб"></a></li>
-              <li class="footer__social-icon"><a href="#" aria-label="Твиттер"></a></li>
+          <div class="footer__icons">
+            <ul class="footer__icons-list">
+              <li class="footer__icon"><a class="footer__icon-link" href="#" aria-label="Телеграм"></a></li>
+              <li class="footer__icon"><a class="footer__icon-link" href="#" aria-label="Ютуб"></a></li>
+              <li class="footer__icon"><a class="footer__icon-link" href="#" aria-label="Твиттер"></a></li>
             </ul>
             <a href="https://htmlacademy.ru/" class="footer__copyright-link"></a>
           </div>
