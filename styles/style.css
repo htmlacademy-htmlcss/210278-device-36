@@ -628,6 +628,12 @@ body {
   margin-bottom: 0;
 }
 
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .subscribe__form-field {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -826,8 +832,9 @@ body {
 }
 
 .filters {
-  width: 320px;
+  width: 200px;
   padding-left: 60px;
+  padding-right: 60px;
 }
 
 .catalog {
@@ -835,8 +842,12 @@ body {
 }
 
 .catalog__products {
-  padding-top: 70px;
-  padding-left: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 44px 360px;
+  grid-template-columns: 360px 360px;
+  gap: 40px 44px;
+  padding: 70px 40px 44px 40px;
   background-color: #FFFFFF;
 }
 
@@ -847,6 +858,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F0F0F0;
 }
 
 .main-catalog, .catalog__pagination {
@@ -891,16 +903,33 @@ body {
   padding: 15px;
 }
 
+.catalog__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
 .catalog__product-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  width: 200px;
+  margin: 0;
 }
 
 .catalog__product-price {
   line-height: 21px;
   color: #444444;
+  margin: 0;
 }
 
 .catalog__load-more {
@@ -912,6 +941,7 @@ body {
   padding: 18px 39px;
   margin-right: 40px;
   margin-left: 40px;
+  margin-bottom: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
@@ -931,7 +961,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 44px 40px 78px 40px;
+  margin: 0px 40px 78px 40px;
 }
 
 .catalog__pagination-list {
