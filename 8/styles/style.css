@@ -391,6 +391,7 @@ body {
       flex-wrap: wrap;
   width: 100%;
   gap: 45px;
+  transform: translateX(5px);
   z-index: 2;
 }
 
@@ -446,10 +447,10 @@ body {
   width: 1160px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  left: -57px;
+  left: -62px;
   min-height: 180px;
   padding-top: 33px;
-  padding-left: 57px;
+  padding-left: 60px;
   padding-bottom: 27px;
   background-color: #FFE17F;
   z-index: 2;
