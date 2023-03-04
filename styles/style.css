@@ -1768,7 +1768,9 @@ body {
   width: 20px;
   height: 19px;
   margin: 0;
-  transform: translate(1px, 4.5px);
+  -webkit-transform: translate(1px, 3.3px);
+      -ms-transform: translate(1px, 3.3px);
+          transform: translate(1px, 3.3px);
 }
 
 .catalog-filter__input-checkbox:focus {
@@ -1842,7 +1844,9 @@ body {
   position: relative;
   width: 20px;
   height: 20px;
-  transform: translate(-4px, 3px);
+  -webkit-transform: translate(-4px, 2.3px);
+      -ms-transform: translate(-4px, 2.3px);
+          transform: translate(-4px, 2.3px);
 }
 
 .catalog-filter__input-checkbox:hover {
