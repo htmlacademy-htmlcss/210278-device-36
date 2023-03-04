@@ -17,7 +17,7 @@
             <form class="user-menu__search-form" action="#" method="post">
               <label class="visually-hidden">Поиск по сайту</label>
               <input class="user-menu__search-field focus" type="search" placeholder="Поиск по сайту" required>
-              <a href="#" class="user-menu__search-button focus">Найти</a>
+              <button type="button" class="user-menu__search-button focus">Найти</button>
             </form>
             <ul class="user-menu__user">
               <li class="user-menu__name">
@@ -31,6 +31,33 @@
               </li>
               <li class="user-menu__list">
                 <a class="user-menu__card focus" href="#">Корзина</a>
+              </li>
+              <li class="popover-cart">
+                <div class="popover-cart__item-container">
+                  <a href="#" class="popover-cart__item focus">
+                    <img class="popover-cart__image" src="images/catalog-product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <p class="popover-cart__text">Любительская селфи-палка</p>
+                  </a>
+                    <button type="button" class="button_cart-delete-item focus"></button>
+                </div>
+                <div class="popover-cart__item-container">
+                  <a href="#" class="popover-cart__item focus">
+                    <img class="popover-cart__image" src="images/catalog-product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <p class="popover-cart__text">Профессиональная селфи-палка</p>
+                  </a>
+                  <button type="button" class="button_cart-delete-item focus"></button>
+                </div>
+                <div class="popover-cart__price-container">
+                  <div class="popover-cart__price">
+                    <p class="popover-cart__price-text">Товаров:
+                      <span>2</span>
+                    </p>
+                    <p class="popover-cart__price-text">Сумма:
+                      <span>2000 ₽</span>
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="button button_popover-cart focus">Открыть корзину</a>
               </li>
             </ul>
           </div>
@@ -305,33 +332,6 @@
         </div>
       </div>
     </footer>
-    <div class="popover-cart popover-cart_active">
-      <div class="popover-cart__item-container">
-        <a href="#" class="popover-cart__item focus">
-          <img class="popover-cart__image" src="images/catalog-product-1-small.jpg" width="39px" height="43px" alt="Любительская селфи-палка">
-          <p class="popover-cart__text">Любительская селфи-палка</p>
-        </a>
-          <button type="button" class="button_cart-delete-item focus"></button>
-      </div>
-      <div class="popover-cart__item-container">
-        <a href="#" class="popover-cart__item focus">
-          <img class="popover-cart__image" src="images/catalog-product-2-small.jpg" width="39px" height="43px" alt="Профессиональная селфи-палка">
-          <p class="popover-cart__text">Профессиональная селфи-палка</p>
-        </a>
-        <button type="button" class="button_cart-delete-item focus"></button>
-      </div>
-      <div class="popover-cart__price-container">
-        <div class="popover-cart__price">
-          <p class="popover-cart__price-text">Товаров:
-            <span>2</span>
-          </p>
-          <p class="popover-cart__price-text">Сумма:
-            <span>2000 ₽</span>
-          </p>
-        </div>
-      </div>
-      <a href="#" class="button button_popover-cart focus">Открыть корзину</a>
-    </div>
     <div class="modal__container">
       <div class="modal modal__auth">
         <button class="button button__modal-close focus">
@@ -352,12 +352,12 @@
             </p>
             <p class="modal__form-group modal__form-group_deliver">
               <label class="modal__form-label" for="modal-group-deliver">Что нужно привезти:</label>
-              <input class="modal__form-input focus" type="text" id="modal-group-deliver" name="modal-group-deliver" placeholder="В свободной форме">
+              <input class="modal__form-input modal__form-input_deliver" type="text" id="modal-group-deliver" name="modal-group-deliver" placeholder="В свободной форме">
             </p>
             <p class="modal__form-group modal__form-group_number">
               <label class="modal__form-label modal__form-label_number" for="modal-group-number">Количество:</label>
               <button class="modal__form-button modal__form-button_minus focus" type="button"><span class="visually-hidden">Убавить</span></button>
-              <input class="modal__form-input modal__form-input_number focus" type="number" id="modal-group-number" name="modal-group-number" placeholder="1">
+              <input class="modal__form-input modal__form-input_number focus" type="number" id="modal-group-number" name="modal-group-number" placeholder="1" min="1">
               <button class="modal__form-button modal__form-button_plus focus" type="button"><span class="visually-hidden">Прибавить</span></button>
               <button class="button_form-info" type="button">
                 <span class="modal__form-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br> к провозу багажа.</span>
