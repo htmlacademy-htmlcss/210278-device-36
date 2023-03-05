@@ -16,12 +16,12 @@
           <div class="user-menu">
             <form class="user-menu__search-form" action="#" method="post">
               <label class="visually-hidden">Поиск по сайту</label>
-              <input class="user-menu__search-field" type="search" placeholder="Поиск по сайту">
-              <a href="#" class="user-menu__search-button focus">Найти</a>
+              <input class="user-menu__search-field focus" type="search" placeholder="Поиск по сайту">
+              <button type="button" class="user-menu__search-button focus">Найти</button>
             </form>
             <ul class="user-menu__user">
               <li class="user-menu__name">
-                <a href="#" class="user-menu__name-link">Коля Петухов</a>
+                <a href="#" class="user-menu__name-link focus">Коля Петухов</a>
               </li>
               <li class="user-menu__list">
                 <a class="user-menu__login_logout focus" href="#">Выйти</a>
@@ -34,12 +34,39 @@
               <li class="user-menu__list">
                 <a class="user-menu__card focus" href="#">Корзина</a>
               </li>
+              <li class="popover-cart">
+                <div class="popover-cart__item-container">
+                  <a href="#" class="popover-cart__item focus">
+                    <img class="popover-cart__image" src="images/catalog-product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                    <p class="popover-cart__text">Любительская селфи-палка</p>
+                  </a>
+                    <button type="button" class="button_cart-delete-item focus"></button>
+                </div>
+                <div class="popover-cart__item-container">
+                  <a href="#" class="popover-cart__item focus">
+                    <img class="popover-cart__image" src="images/catalog-product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <p class="popover-cart__text">Профессиональная селфи-палка</p>
+                  </a>
+                  <button type="button" class="button_cart-delete-item focus"></button>
+                </div>
+                <div class="popover-cart__price-container">
+                  <div class="popover-cart__price">
+                    <p class="popover-cart__price-text">Товаров:
+                      <span>2</span>
+                    </p>
+                    <p class="popover-cart__price-text">Сумма:
+                      <span>2000 ₽</span>
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="button button_popover-cart focus">Открыть корзину</a>
+              </li>
             </ul>
           </div>
           <div class="site-menu">
             <ul class="site-menu__list">
               <li class="site-menu__item">
-                <a href="#" class="site-menu__item-link">Каталог товаров</a>
+                <a href="#" class="site-menu__item-link focus">Каталог товаров</a>
                 <ul class="site-menu__sub">
                   <li class="site-menu__sub-item">
                     <a href="catalog.html" class="site-menu__sub-item-link focus">Виртуальная реальность</a>
@@ -80,50 +107,52 @@
               <form class="catalog-filter" name="filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter__price-control">
                   <legend class="catalog-filter__title">Стоимость</legend>
-                  <div class="catalog-filter__price-slider">
+                  <div class="catalog-filter-price-slider">
                     <div class="slider-scale">
                       <div class="slider-scale__strip"></div>
                     </div>
-                    <div class="price-toggles price-toggle-min"></div>
-                    <div class="price-toggles price-toggle-max"></div>
+                    <div class="price-toggles price-toggles_min" tabindex="0"></div>
+                    <div class="price-toggles price-toggles_max" tabindex="0"></div>
                     <div class="price-control">
-                      <label class="min-price">
-                          от <input type="number" name="min-price" value="0" min="0">
-                      </label>
-                      <label class="max-price">
-                          до <input type="number" name="max-price" value="5000" min="0">
-                      </label>
+                      <p class="price-control__block">
+                        <label for="min-price" class="price-control__label">от</label>
+                        <input type="number" id="min-price" value="0" min="0" class="price-control__min-price focus">
+                      </p>
+                      <p class="price-control__block">
+                        <label for="max-price" class="price-control__label">до</label>
+                        <input type="number" id="max-price" value="5000" max="5000" class="price-control__max-price focus">
+                      </p>
                     </div>
                   </div>
                 </fieldset>
                 <fieldset class="catalog-filter__color">
                   <legend class="catalog-filter__title">Цвет</legend>
                   <p class="catalog-filter__text">
-                    <input type="checkbox" id="checkbox-black" name="black" class="catalog-filter-input-checkbox" checked="">
+                    <input type="checkbox" id="checkbox-black" name="black" class="catalog-filter__input-checkbox focus" checked>
                     <label for="checkbox-black" class="catalog-filter-label catalog-filter-label_checkbox">
                       Черный
                     </label>
                   </p>
                   <p class="catalog-filter__text">
-                    <input type="checkbox" id="checkbox-white" name="white" class="catalog-filter-input-checkbox" checked="">
+                    <input type="checkbox" id="checkbox-white" name="white" class="catalog-filter__input-checkbox focus" checked>
                     <label for="checkbox-white" class="catalog-filter-label catalog-filter-label_checkbox">
                       Белый
                     </label>
                   </p>
                   <p class="catalog-filter__text">
-                    <input type="checkbox" id="checkbox-blue" name="blue" class="catalog-filter-input-checkbox">
+                    <input type="checkbox" id="checkbox-blue" name="blue" class="catalog-filter__input-checkbox focus">
                     <label for="checkbox-blue" class="catalog-filter-label catalog-filter-label_checkbox">
                       Синий
                     </label>
                   </p>
                   <p class="catalog-filter__text">
-                    <input type="checkbox" id="checkbox-red" name="red" class="catalog-filter-input-checkbox">
+                    <input type="checkbox" id="checkbox-red" name="red" class="catalog-filter__input-checkbox focus">
                     <label for="checkbox-red" class="catalog-filter-label catalog-filter-label_checkbox">
                       Красный
                     </label>
                   </p>
                   <p class="catalog-filter__text">
-                    <input type="checkbox" id="checkbox-pink" name="pink" class="catalog-filter-input-checkbox">
+                    <input type="checkbox" id="checkbox-pink" name="pink" class="catalog-filter__input-checkbox focus">
                     <label for="checkbox-pink" class="catalog-filter-label catalog-filter-label_checkbox">
                       Розовый
                     </label>
@@ -132,19 +161,19 @@
                 <fieldset class="catalog-filter__bluetooth">
                   <legend class="catalog-filter__title">Bluetooth</legend>
                   <p class="catalog-filter__text">
-                    <input type="radio" id="bluetooth-yes" name="bluetooth" class="catalog-filter__input-radio" checked="">
-                    <label for="bluetooth-yes" class="catalog-filter-label catalog-filter-label_radio">
+                    <input type="radio" id="bluetooth-yes" name="bluetooth" class="catalog-filter__input-radio catalog-filter__input-radio_checked focus" checked>
+                    <label for="bluetooth-yes" class="catalog-filter__label-radio catalog-filter-label_radio">
                       Есть
                     </label>
                   </p>
                   <p class="catalog-filter__text">
-                    <input type="radio" id="bluetooth-no" name="bluetooth" class="catalog-filter__input-radio">
-                    <label for="bluetooth-no" class="catalog-filter-label catalog-filter-label_radio">
+                    <input type="radio" id="bluetooth-no" name="bluetooth" class="catalog-filter__input-radio focus">
+                    <label for="bluetooth-no" class="catalog-filter__label-radio catalog-filter-label_radio">
                       Нет
                     </label>
                   </p>
                 </fieldset>
-                <button class="button button_form" type="submit">Показать</button>
+                <button class="button button_form  focus" type="submit">Показать</button>
               </form>
             </section>
             <section class="catalog container">
@@ -199,7 +228,7 @@
                   </div>
                 </a>
               </div>
-              <a href="#" class="button catalog__load-more focus">Загрузить ещё</a>
+              <button type="button" class="button catalog__load-more focus">Загрузить ещё</button>
               <div class="catalog__pagination">
                 <a href="#" class="button catalog__pagination-button focus">Назад</a>
                 <ul class="catalog__pagination-list">
