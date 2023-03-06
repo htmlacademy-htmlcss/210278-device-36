@@ -677,7 +677,8 @@ body {
 .button_main-slider:hover::before,
 .button_about-us:hover::before,
 .button_write-us:hover::before,
-.service__link:hover::before {
+.service__link:hover::before,
+.button_form:hover::before {
   -webkit-transform: scaleY(5);
       -ms-transform: scaleY(5);
           transform: scaleY(5);
@@ -685,7 +686,8 @@ body {
 
 .button_main-slider:active::before,
 .button_about-us:active::before,
-.button_write-us:active::before {
+.button_write-us:active::before,
+.button_form:active::before {
   background-color: #FFCC33;
 }
 
