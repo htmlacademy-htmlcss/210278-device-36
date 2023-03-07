@@ -186,7 +186,7 @@ body {
   width: 517px;
 }
 
-.user-menu__search-form::before {
+.user-menu__search-button::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -201,6 +201,7 @@ body {
 }
 
 .user-menu__search-field {
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -232,7 +233,7 @@ body {
 }
 
 .user-menu__search-field:disabled,
-.user-menu__search-field:disabled + .user-menu__search-form::before,
+.user-menu__search-field:disabled + .user-menu__search-button::before,
 .user-menu__search-button:disabled {
   opacity: 0.1;
 }
