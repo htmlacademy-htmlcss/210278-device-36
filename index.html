@@ -16,9 +16,9 @@
           </a>
           <div class="user-menu">
             <form class="user-menu__search-form" action="#" method="post">
-              <label class="visually-hidden">Поиск по сайту</label>
-              <input class="user-menu__search-field focus" type="search" placeholder="Поиск по сайту" required>
-              <button type="button" class="user-menu__search-button focus">Найти</button>
+              <label class="visually-hidden" for="search-request">Поиск по сайту</label>
+              <input class="user-menu__search-field focus" type="search" id="search-request" name="search" placeholder="Поиск по сайту" required>
+              <button type="submit" class="user-menu__search-button focus">Найти</button>
             </form>
             <ul class="user-menu__user">
               <li class="user-menu__name">
@@ -276,7 +276,8 @@
             </div>
             <div class="subscribe__form-wrapper">
               <form class="subscribe__form" method="post" action="#">
-                <input class="subscribe__form-field focus" type="text" name="subscribe" placeholder="Ваш e-mail">
+                <label class="visually-hidden" for="subscribe">Подписка на рассылку</label>
+                <input class="subscribe__form-field focus" type="text" id="subscribe" name="subscribe" placeholder="Ваш e-mail" required>
                 <button class="button button_subscribe focus" type="submit">Подписаться</button>
               </form>
               <p class="subscribe__notice">Это бесплатно</p>
